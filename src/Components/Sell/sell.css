@@ -11,6 +11,36 @@
 
 .sell-page {
     animation: sell .5s;
-    height: 30rem;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+.sell-page input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    margin: 1rem 0;
+}
+.sell-page input::placeholder {
+    opacity: .3;
+    font-style: italic;
+}
+.sell-page textarea {
+    height: 15rem;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 1rem;
+}
+.sell-page textarea::placeholder {
+    opacity: .3;
+    font-style: italic;
+}
+.sell-page button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #282c34;
 }
