@@ -5,6 +5,7 @@ import Search from './Components/Search/Search'
 import Products from './Components/Products/Products'
 import Likes from './Components/Likes/Likes'
 import Sell from './Components/Sell/Sell'
+import { firebaseDB } from './Server';
 
 class App extends Component {
   state = {
@@ -57,10 +58,11 @@ class App extends Component {
     inputValue: '',
 
   }
-  // componentDidMount(){
-  //   this.state.products.splice(1,1)
-  //   console.log(this.state.products)
-  // }
+  componentDidMount(){
+    firebaseDB.ref().once('value').then((snapshot)=>{
+      console.log(snapshot.val())
+    })
+  }
 
   onRouteChange = (route) => {
     this.setState({error: false})
