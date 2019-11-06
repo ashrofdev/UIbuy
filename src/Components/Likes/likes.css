@@ -1,0 +1,15 @@
+@keyframes likes {
+    0% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.likes-page {
+    animation: likes .5s;
+    height: 30rem;
+}
