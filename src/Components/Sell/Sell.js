@@ -4,7 +4,7 @@ import './sell.css'
 const Sell = () => {
     return (
         <div className="sell-page">
-        {"Sell page"}
+            
         </div>
     );
 };
