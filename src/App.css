@@ -50,7 +50,13 @@ main section {
 }
 
 @media only screen and (max-width: 600px) {
+  main {
+    display: block;
+  }
   .App-header {
+    padding: 0 1rem;
+    padding-top: 2rem;
+    padding-right: 0;
     grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(7rem, 12rem)) minmax(2rem, 1fr);
     display: block;
   }
