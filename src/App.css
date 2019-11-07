@@ -21,7 +21,7 @@ button:active{
   color: white;
   padding-top: 3rem;
   display: grid;
-  grid-template-columns: 1fr repeat(6, 12rem) 1fr;
+  grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(7rem, 12rem)) minmax(2rem, 1fr);
 }
 .heading {
   font-family: monospace;
@@ -41,10 +41,20 @@ button:active{
 
 main {
   display: grid;
-  grid-template-columns: 1fr repeat(6, 12rem) 1fr;
+  grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(7rem, 12rem)) minmax(2rem, 1fr);
   margin: 5rem 0;
 }
 main section {
   grid-column: 2/8;
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .App-header {
+    grid-template-columns: minmax(2rem, 1fr) repeat(6, minmax(7rem, 12rem)) minmax(2rem, 1fr);
+    display: block;
+  }
+  .navsearch {
+    flex-direction: column-reverse;
+  }
 }
