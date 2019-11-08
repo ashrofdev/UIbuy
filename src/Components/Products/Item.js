@@ -5,7 +5,7 @@ const Item = ({name, seller, price, img, onLike, item}) => {
     return (
         <div className="item">
             <figure>
-                <img alt="product img" src={require('./'+img)}/>
+                <img alt="product img" src={img}/>
             </figure>
             <div style={{padding: "1rem 1.5rem"}}>
                 <h3 className="item_name">{name}</h3>

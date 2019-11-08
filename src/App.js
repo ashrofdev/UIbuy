@@ -10,57 +10,22 @@ import { firebaseDB } from './Server';
 class App extends Component {
   state = {
     route: 'products',
-    products: [
-      {
-        name: 'New General Mathematics',
-        seller: 'Godwin Olaoluwa',
-        price: 'N 1,300',
-        img: 'gal-1.jpeg'
-      },
-      {
-        name: 'Properties of matter',
-        seller: 'Felix Samuel',
-        price: 'N 950',
-        img: 'gal-2.jpeg'
-      },
-      {
-        name: 'C# for beginners',
-        seller: 'Brenden Eike',
-        price: 'N 15,400',
-        img: 'gal-3.jpeg'
-      },
-      {
-        name: 'Introduction to kinematics',
-        seller: 'Iseac Newton',
-        price: 'N 3,800',
-        img: 'gal-4.jpeg'
-      },
-      {
-        name: 'Properties of matter',
-        seller: 'Felix Samuel',
-        price: 'N 950',
-        img: 'gal-5.jpeg'
-      },
-      {
-        name: 'C# for beginners',
-        seller: 'Brenden Eike',
-        price: 'N 15,400',
-        img: 'gal-6.jpeg'
-      },
-      {
-        name: 'Introduction to kinematics',
-        seller: 'Iseac Newton',
-        price: 'N 3,800',
-        img: 'gal-7.jpeg'
-      }
-    ],
+    products: [],
     likes: [],
     inputValue: '',
 
   }
   componentDidMount(){
-    firebaseDB.ref().once('value').then((snapshot)=>{
+    firebaseDB.ref('products').once('value').then((snapshot)=>{
       console.log(snapshot.val())
+      // snapshot.val().forEach((item)=>{
+      //   this.state.products.push(item)
+      // })
+      const items = []
+      Object.entries(snapshot.val()).map(e => {
+        items.push(e[1])
+      })
+      this.setState({products: items})
     })
   }
 
@@ -96,12 +61,14 @@ class App extends Component {
     }
   }
 
-  render() {
-    const filteredProducts = this.state.products.filter((item)=> 
-    item.name.toLocaleLowerCase().includes(this.state.inputValue.toLocaleLowerCase()))
+ 
 
-    const filteredLikes = this.state.likes.filter((item)=> 
-    item.name.toLocaleLowerCase().includes(this.state.inputValue.toLocaleLowerCase()))
+  render() {
+    // const filteredProducts = this.state.products.filter((item)=> 
+    // item.name.includes(this.state.inputValue))
+
+    // const filteredLikes = this.state.likes.filter((item)=> 
+    // item.name.includes(this.state.inputValue))
     return (
       <div className="App">
         <header className="App-header">
@@ -118,12 +85,12 @@ class App extends Component {
           <section>
             {
               this.state.route === 'products'?
-                <Products items ={filteredProducts} onLike={this.onLike}
+                <Products items ={this.state.products} onLike={this.onLike}
                  error={this.state.error}/>
               : this.state.route === 'sell'?
                 <Sell/>
               : this.state.route === 'likes'?
-                <Likes likes={filteredLikes} />
+                <Likes likes={this.state.likes} />
               : null
             }
           </section>

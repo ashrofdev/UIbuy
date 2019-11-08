@@ -7,8 +7,8 @@ class Products extends Component {
         const { items, onLike } = this.props
         console.log(items)
         const item = items.map((i,e)=>{
-            return <Item item={items[e]} itemNo={e} onLike={onLike} img={items[e].img} name={items[e].name} seller={items[e].seller}
-             price={items[e].price}/>
+            return <Item item={items[e]} itemNo={e} onLike={onLike} img={items[e].product_url} name={items[e].product_name} seller={items[e].seller_name}
+             price={items[e].product_price}/>
         })
         return (
             <div className="prodcs">
