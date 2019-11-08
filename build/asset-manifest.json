@@ -1,31 +1,21 @@
 {
   "files": {
-    "main.css": "/UIbuy/static/css/main.c2c6eeee.chunk.css",
-    "main.js": "/UIbuy/static/js/main.118bb973.chunk.js",
-    "main.js.map": "/UIbuy/static/js/main.118bb973.chunk.js.map",
+    "main.css": "/UIbuy/static/css/main.8e110b53.chunk.css",
+    "main.js": "/UIbuy/static/js/main.00d1bcbb.chunk.js",
+    "main.js.map": "/UIbuy/static/js/main.00d1bcbb.chunk.js.map",
     "runtime-main.js": "/UIbuy/static/js/runtime-main.b52c0da8.js",
     "runtime-main.js.map": "/UIbuy/static/js/runtime-main.b52c0da8.js.map",
-    "static/js/2.8c441648.chunk.js": "/UIbuy/static/js/2.8c441648.chunk.js",
-    "static/js/2.8c441648.chunk.js.map": "/UIbuy/static/js/2.8c441648.chunk.js.map",
+    "static/js/2.2e76c133.chunk.js": "/UIbuy/static/js/2.2e76c133.chunk.js",
+    "static/js/2.2e76c133.chunk.js.map": "/UIbuy/static/js/2.2e76c133.chunk.js.map",
     "index.html": "/UIbuy/index.html",
-    "precache-manifest.25c72ce4d1d44c3d3ddc0971d4770891.js": "/UIbuy/precache-manifest.25c72ce4d1d44c3d3ddc0971d4770891.js",
+    "precache-manifest.7ee7a79890c2e81e69b3990daf3a17ba.js": "/UIbuy/precache-manifest.7ee7a79890c2e81e69b3990daf3a17ba.js",
     "service-worker.js": "/UIbuy/service-worker.js",
-    "static/css/main.c2c6eeee.chunk.css.map": "/UIbuy/static/css/main.c2c6eeee.chunk.css.map",
-    "static/media/gal-1.jpeg": "/UIbuy/static/media/gal-1.581fc6ad.jpeg",
-    "static/media/gal-10.jpeg": "/UIbuy/static/media/gal-10.9865e700.jpeg",
-    "static/media/gal-2.jpeg": "/UIbuy/static/media/gal-2.ee7b3ca7.jpeg",
-    "static/media/gal-3.jpeg": "/UIbuy/static/media/gal-3.628f87ae.jpeg",
-    "static/media/gal-4.jpeg": "/UIbuy/static/media/gal-4.c6fff3a1.jpeg",
-    "static/media/gal-5.jpeg": "/UIbuy/static/media/gal-5.4114ded4.jpeg",
-    "static/media/gal-6.jpeg": "/UIbuy/static/media/gal-6.aa2376b5.jpeg",
-    "static/media/gal-7.jpeg": "/UIbuy/static/media/gal-7.6085a127.jpeg",
-    "static/media/gal-8.jpeg": "/UIbuy/static/media/gal-8.f30fbda6.jpeg",
-    "static/media/gal-9.jpeg": "/UIbuy/static/media/gal-9.92758fee.jpeg"
+    "static/css/main.8e110b53.chunk.css.map": "/UIbuy/static/css/main.8e110b53.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.b52c0da8.js",
-    "static/js/2.8c441648.chunk.js",
-    "static/css/main.c2c6eeee.chunk.css",
-    "static/js/main.118bb973.chunk.js"
+    "static/js/2.2e76c133.chunk.js",
+    "static/css/main.8e110b53.chunk.css",
+    "static/js/main.00d1bcbb.chunk.js"
   ]
 }

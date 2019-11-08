@@ -22,7 +22,7 @@ class Sell extends Component {
                 product_url: url,
                 seller_name: document.querySelector('.seller_name').value,
                 product_name: document.querySelector('.product_name').value,
-                product_price: document.querySelector('.product_price').value,
+                product_price: '₦' + document.querySelector('.product_price').value,
                 item_details: document.querySelector('.item_details').value
             }).then((snapshot)=>{
                 console.log(snapshot)
@@ -46,6 +46,13 @@ class Sell extends Component {
                 <input placeholder="Enter your name" className="seller_name"/>
                 <input placeholder="Enter product's name" className="product_name"/>
                 <input placeholder="Enter product's price" className="product_price"/>
+                <label>
+                    Price Negotiability
+                    <select>
+                        <option>Negotiable</option>
+                        <option>Not negotiable</option>
+                    </select>
+                </label>
                 <textarea className="item_details" placeholder="Item details"/>
                 <button onClick={this.onSubmitProduct}>SELL ITEM</button>
             </div>

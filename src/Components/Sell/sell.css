@@ -27,6 +27,17 @@
     opacity: .3;
     font-style: italic;
 }
+.sell-page label {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    color: gray;
+    font-style: italic;
+}
+.sell-page select {
+    height: 2rem;
+    outline: none;
+    margin-left: 1rem;
+}
 .sell-page textarea {
     height: 15rem;
     font-size: 1.2rem;
