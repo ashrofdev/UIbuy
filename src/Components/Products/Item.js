@@ -7,7 +7,7 @@ const Item = ({name, seller, price, img, onLike, item}) => {
             <figure>
                 <img alt="product img" src={img}/>
             </figure>
-            <div style={{padding: "1rem 1.5rem"}}>
+            <div className="item_details" >
                 <h3 className="item_name">{name}</h3>
                 <div className="item_sub_details">
                     <p className="item_seller">{seller}</p>

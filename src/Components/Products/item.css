@@ -25,6 +25,9 @@ img {
     width: 15rem;
     height: 15rem;
 }
+.item_details {
+    padding: 1rem 1.5rem;
+}
 .item_name {
     font-weight: 700;
     padding: .5rem 0;
@@ -70,6 +73,9 @@ img {
     }
     .item {
         padding: 0;
+    }
+    .item_details {
+        padding: .5rem;
     }
     
 }
