@@ -23,6 +23,7 @@ class Sell extends Component {
                 seller_name: document.querySelector('.seller_name').value,
                 product_name: document.querySelector('.product_name').value,
                 product_price: '₦' + document.querySelector('.product_price').value,
+                price_negotiability: document.querySelector('select').value,
                 item_details: document.querySelector('.item_details').value
             }).then((snapshot)=>{
                 console.log(snapshot)

@@ -13,20 +13,27 @@ class App extends Component {
     products: [],
     likes: [],
     inputValue: '',
-
   }
   componentDidMount(){
-    firebaseDB.ref('products').once('value').then((snapshot)=>{
-      console.log(snapshot.val())
-      // snapshot.val().forEach((item)=>{
-      //   this.state.products.push(item)
-      // })
-      const items = []
-      Object.entries(snapshot.val()).map(e => {
-        items.push(e[1])
-      })
+
+    const items = []
+    firebaseDB.ref('products').once('value').then(snapshot=>{
+      snapshot.forEach(e => {
+        items.push(e.val())
+      });
       this.setState({products: items})
+        console.log(this.state.products)
     })
+    // firebaseDB.ref('products').once('value').then((snapshot)=>{
+    //   console.log(snapshot.val())
+    //   snapshot.val().forEach(function(item){
+    //     items.push(item)
+    //   })
+    //   // Object.entries(snapshot.val()).map(e => {
+    //   //   items.push(e[1])
+    //   // })
+    //   this.setState({products: items})
+    // })
   }
 
   onRouteChange = (route) => {
@@ -64,11 +71,11 @@ class App extends Component {
  
 
   render() {
-    // const filteredProducts = this.state.products.filter((item)=> 
-    // item.name.includes(this.state.inputValue))
+    const filteredProducts = this.state.products.filter((item)=> 
+    item.product_name.toLowerCase().includes(this.state.inputValue.toLocaleLowerCase()))
 
-    // const filteredLikes = this.state.likes.filter((item)=> 
-    // item.name.includes(this.state.inputValue))
+    const filteredLikes = this.state.likes.filter((item)=> 
+    item.product_name.toLowerCase().includes(this.state.inputValue.toLocaleLowerCase()))
     return (
       <div className="App">
         <header className="App-header">
@@ -85,12 +92,12 @@ class App extends Component {
           <section>
             {
               this.state.route === 'products'?
-                <Products items ={this.state.products} onLike={this.onLike}
+                <Products items ={filteredProducts} onLike={this.onLike}
                  error={this.state.error}/>
               : this.state.route === 'sell'?
                 <Sell/>
               : this.state.route === 'likes'?
-                <Likes likes={this.state.likes} />
+                <Likes likes={filteredLikes} />
               : null
             }
           </section>
