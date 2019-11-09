@@ -2,9 +2,7 @@ import React from 'react';
 
 const Error = ({message}) => {
     return (
-        <div style={{
-                gridColumn: "2/3"
-            }}>
+        <div className="error" >
             <h2 style={{
                 color: "gray",
                 opacity: .5,

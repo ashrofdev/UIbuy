@@ -11,5 +11,13 @@
 
 .likes-page {
     animation: likes .5s;
-    height: 30rem;
+}
+
+.error {
+    grid-column: "2/3"
+}
+@media only screen and (max-width: 600px) {
+    .error {
+        grid-column: 1/-1;
+    }
 }
