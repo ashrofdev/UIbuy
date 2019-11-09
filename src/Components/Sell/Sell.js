@@ -11,6 +11,7 @@ class Sell extends Component {
     }
 
     onSubmitProduct = async () => {
+        
         await storage.ref('product_images')
         .child(document.querySelector('.product_name').value)
         .put(this.state.file)

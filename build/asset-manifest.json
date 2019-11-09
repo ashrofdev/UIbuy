@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/UIbuy/static/css/main.8c782419.chunk.css",
-    "main.js": "/UIbuy/static/js/main.bf76e4d5.chunk.js",
-    "main.js.map": "/UIbuy/static/js/main.bf76e4d5.chunk.js.map",
+    "main.css": "/UIbuy/static/css/main.3ab30d58.chunk.css",
+    "main.js": "/UIbuy/static/js/main.df020c31.chunk.js",
+    "main.js.map": "/UIbuy/static/js/main.df020c31.chunk.js.map",
     "runtime-main.js": "/UIbuy/static/js/runtime-main.b52c0da8.js",
     "runtime-main.js.map": "/UIbuy/static/js/runtime-main.b52c0da8.js.map",
     "static/js/2.2e76c133.chunk.js": "/UIbuy/static/js/2.2e76c133.chunk.js",
     "static/js/2.2e76c133.chunk.js.map": "/UIbuy/static/js/2.2e76c133.chunk.js.map",
     "index.html": "/UIbuy/index.html",
-    "precache-manifest.27f9825dc6e01883385274942cb76e9f.js": "/UIbuy/precache-manifest.27f9825dc6e01883385274942cb76e9f.js",
+    "precache-manifest.9c3c60a5d20907ba2f255069ec3315e3.js": "/UIbuy/precache-manifest.9c3c60a5d20907ba2f255069ec3315e3.js",
     "service-worker.js": "/UIbuy/service-worker.js",
-    "static/css/main.8c782419.chunk.css.map": "/UIbuy/static/css/main.8c782419.chunk.css.map"
+    "static/css/main.3ab30d58.chunk.css.map": "/UIbuy/static/css/main.3ab30d58.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.b52c0da8.js",
     "static/js/2.2e76c133.chunk.js",
-    "static/css/main.8c782419.chunk.css",
-    "static/js/main.bf76e4d5.chunk.js"
+    "static/css/main.3ab30d58.chunk.css",
+    "static/js/main.df020c31.chunk.js"
   ]
 }
