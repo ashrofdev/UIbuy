@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "747b9ca23f13e1b558753beb504ad45f",
+    "revision": "54132b2b362c394f4c33eb87b08c56b9",
     "url": "/UIbuy/index.html"
   },
   {
-    "revision": "df12187d7ae4258f16c7",
-    "url": "/UIbuy/static/css/main.8e110b53.chunk.css"
+    "revision": "eef3fd98c54b13b41f00",
+    "url": "/UIbuy/static/css/main.3b29264a.chunk.css"
   },
   {
     "revision": "4605eb61733859eb0143",
     "url": "/UIbuy/static/js/2.2e76c133.chunk.js"
   },
   {
-    "revision": "df12187d7ae4258f16c7",
-    "url": "/UIbuy/static/js/main.00d1bcbb.chunk.js"
+    "revision": "eef3fd98c54b13b41f00",
+    "url": "/UIbuy/static/js/main.9b167b82.chunk.js"
   },
   {
     "revision": "412c8bda13ac9653804a",
