@@ -3,15 +3,18 @@ import {firebaseDB, storage} from '../../Server'
 
 
 import React, { Component } from 'react';
+import Alert from '../Alert/Alert';
 
 class Sell extends Component {
 
     state = {
-        file: ''
+        file: '',
+        upload: false
     }
 
     onSubmitProduct = async () => {
-        
+        document.querySelector('button span').classList.add('roll')
+
         await storage.ref('product_images')
         .child(document.querySelector('.product_name').value)
         .put(this.state.file)
@@ -28,6 +31,11 @@ class Sell extends Component {
                 item_details: document.querySelector('.item_details').value
             }).then((snapshot)=>{
                 console.log(snapshot)
+                this.setState({upload: true})
+                document.querySelector('button span').classList.remove('roll')
+            }).catch((err)=>{
+                console.log(err)
+                document.querySelector('button span').classList.remove('roll')
             })
         })
         
@@ -35,6 +43,11 @@ class Sell extends Component {
 
     onUpload = (e) => {
         this.setState({file: e.target.files[0]})
+    }
+
+    alertGo = (e) => {
+        e.target.parentElement.remove()
+        this.setState({alert: false})
     }
 
     render() {
@@ -56,7 +69,10 @@ class Sell extends Component {
                     </select>
                 </label>
                 <textarea className="item_details" placeholder="Item details"/>
-                <button onClick={this.onSubmitProduct}>SELL ITEM</button>
+                <button onClick={this.onSubmitProduct}>SELL ITEM <span>🛒</span></button>
+                {
+                    this.state.upload? <Alert alertGo={this.alertGo} text="Product deployed"/>:null
+                }
             </div>
         );
     }

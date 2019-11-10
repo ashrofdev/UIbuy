@@ -1,0 +1,36 @@
+@keyframes alert {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+.alert {
+    animation: alert 1s;
+    position: fixed;
+    background-color: white;
+    color: rgb(4, 4, 82);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    top: 1rem;
+    right: 30%;
+    width: 30rem;
+    margin-top: 1rem;
+    transform: translate(-10%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alert button {
+    font-size: 1rem;
+    padding: .5rem;
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+}
+.alert button:hover {
+    color: red;
+}

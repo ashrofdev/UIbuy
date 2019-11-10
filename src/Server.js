@@ -4,7 +4,7 @@ import 'firebase/database'
 import 'firebase/storage'
 
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyC9vhjcrGujljlfDLhSKsEkBnYJqaCsLqA",
     authDomain: "test-mflbrq.firebaseapp.com",
     databaseURL: "https://test-mflbrq.firebaseio.com",
@@ -22,3 +22,6 @@ var firebaseConfig = {
  
 
   export const storage = firebase.storage()
+
+  /////////////////
+

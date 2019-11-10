@@ -16,13 +16,21 @@
     grid-gap: 1rem;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 970px) {
     .prodcs {
-        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+        grid-template-columns: repeat(3, minmax(5rem, 1fr));
     }
     
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
+    .prodcs {
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
+        grid-gap: .5rem;
+        padding: .5rem;
+    }
+    
+}
+@media only screen and (max-width: 540px) {
     .prodcs {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: .5rem;
