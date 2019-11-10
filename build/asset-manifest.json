@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/UIbuy/static/css/main.34015a72.chunk.css",
-    "main.js": "/UIbuy/static/js/main.df020c31.chunk.js",
-    "main.js.map": "/UIbuy/static/js/main.df020c31.chunk.js.map",
+    "main.css": "/UIbuy/static/css/main.a010f112.chunk.css",
+    "main.js": "/UIbuy/static/js/main.4d1ad0c3.chunk.js",
+    "main.js.map": "/UIbuy/static/js/main.4d1ad0c3.chunk.js.map",
     "runtime-main.js": "/UIbuy/static/js/runtime-main.b52c0da8.js",
     "runtime-main.js.map": "/UIbuy/static/js/runtime-main.b52c0da8.js.map",
-    "static/js/2.2e76c133.chunk.js": "/UIbuy/static/js/2.2e76c133.chunk.js",
-    "static/js/2.2e76c133.chunk.js.map": "/UIbuy/static/js/2.2e76c133.chunk.js.map",
+    "static/js/2.6d4a9b5c.chunk.js": "/UIbuy/static/js/2.6d4a9b5c.chunk.js",
+    "static/js/2.6d4a9b5c.chunk.js.map": "/UIbuy/static/js/2.6d4a9b5c.chunk.js.map",
     "index.html": "/UIbuy/index.html",
-    "precache-manifest.914344091149a66b3cbb09c8ac1665f9.js": "/UIbuy/precache-manifest.914344091149a66b3cbb09c8ac1665f9.js",
+    "precache-manifest.28c84b5aa4cd0d0a315a242ca36cdd07.js": "/UIbuy/precache-manifest.28c84b5aa4cd0d0a315a242ca36cdd07.js",
     "service-worker.js": "/UIbuy/service-worker.js",
-    "static/css/main.34015a72.chunk.css.map": "/UIbuy/static/css/main.34015a72.chunk.css.map"
+    "static/css/main.a010f112.chunk.css.map": "/UIbuy/static/css/main.a010f112.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.b52c0da8.js",
-    "static/js/2.2e76c133.chunk.js",
-    "static/css/main.34015a72.chunk.css",
-    "static/js/main.df020c31.chunk.js"
+    "static/js/2.6d4a9b5c.chunk.js",
+    "static/css/main.a010f112.chunk.css",
+    "static/js/main.4d1ad0c3.chunk.js"
   ]
 }

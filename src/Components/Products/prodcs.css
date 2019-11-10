@@ -38,3 +38,11 @@
     }
     
 }
+
+@media only screen and (max-width: 285px) {
+    .prodcs {
+        grid-gap: 0;
+        padding: .1rem;
+    }
+    
+}
