@@ -1,14 +1,20 @@
 import React from 'react';
+import './detail.css'
 
 const ProductDetails = ({product}) => {
     return (
-        <div className="prodcs product_details">
+        <div className="product-details">
             <figure style={{gridColumn: "1/4"}}>
-                <img />
+                <img style={{
+                    width: "100%",
+                    height: "auto"
+                }}  src={require('./'+product.product_url)}/>
             </figure>
             <div 
                 style={{
-                    fontSize: "1.3rem"
+                    fontSize: "1.3rem",
+                    gridColumn: "4/-1",
+                    justifySelf: "flexEnd"
                 }}
             >
                 <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
@@ -21,7 +27,7 @@ const ProductDetails = ({product}) => {
                     <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Seller's Name: `}</p><span>{product.seller_name}</span>
                 </div>
                 <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
-                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Seller's Phone: `}</p><span>{product.seller_phone}</span>
+                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Phone no: `}</p><span>{product.seller_phone}</span>
                 </div>
                 <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
                     <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Prce Negotiability: `}</p><span>{product.product_negotiability}</span>

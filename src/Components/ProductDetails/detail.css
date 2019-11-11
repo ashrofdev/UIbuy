@@ -1,0 +1,6 @@
+.product-details{
+    display: "grid";
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    justify-content: "space-between";
+    grid-gap: 1rem;
+}

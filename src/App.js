@@ -14,12 +14,22 @@ class App extends Component {
     buy: true,
     products: [
       {
+        product_url: 'gal-1.jpeg',
         product_name: 'test',
         seller_name: 'tester',
         product_price: '2000',
         product_negotiability: 'negotiable',
         seller_phone: '08169094945',
         product_details: 'This is super story.....'
+      },
+      {
+        product_url: 'gal-2.jpeg',
+        product_name: 'test2',
+        seller_name: 'tester2',
+        product_price: '5000',
+        product_negotiability: 'not negotiable',
+        seller_phone: '0701209848',
+        product_details: 'This is super story..... doorrrr'
       }
     ],
     product: {},
