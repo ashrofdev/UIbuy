@@ -1,6 +1,14 @@
 .product-details{
-    display: "grid";
+    display: grid;
     grid-template-columns: repeat(5, minmax(min-content, 1fr));
     justify-content: "space-between";
     grid-gap: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .product-details {
+        padding: 1rem;
+        display: block;
+    }
+    
 }

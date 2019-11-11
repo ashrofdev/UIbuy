@@ -4,10 +4,10 @@ import './detail.css'
 const ProductDetails = ({product}) => {
     return (
         <div className="product-details">
-            <figure style={{gridColumn: "1/4"}}>
+            <figure style={{gridColumn: "1/4",marginRight: "3rem"}}>
                 <img style={{
                     width: "100%",
-                    height: "auto"
+                    height: "auto",
                 }}  src={require('./'+product.product_url)}/>
             </figure>
             <div 
