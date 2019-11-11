@@ -11,20 +11,20 @@ const ProductDetails = ({product}) => {
                     fontSize: "1.3rem"
                 }}
             >
-                <div style={{display: "flex"}}>
-                    <p>{`Product's Name: `}</p><span>{product.product_name}</span>
+                <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
+                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Product's Name: `}</p><span>{product.product_name}</span>
                 </div>
-                <div style={{display: "flex"}}>
-                    <p>{`Product's Price: `}</p><span>{'₦'+product.product_price}</span>
+                <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
+                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Product's Price: `}</p><span>{'₦'+product.product_price}</span>
                 </div>
-                <div style={{display: "flex"}}>
-                    <p>{`Seller's Name: `}</p><span>{product.seller_name}</span>
+                <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
+                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Seller's Name: `}</p><span>{product.seller_name}</span>
                 </div>
-                <div style={{display: "flex"}}>
-                    <p>{`Seller's Phone: `}</p><span>{product.seller_phone}</span>
+                <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
+                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Seller's Phone: `}</p><span>{product.seller_phone}</span>
                 </div>
-                <div style={{display: "flex"}}>
-                    <p>{`Prce Negotiability: `}</p><span>{product.product_negotiability}</span>
+                <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
+                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Prce Negotiability: `}</p><span>{product.product_negotiability}</span>
                 </div>
             </div>
             <h2 
