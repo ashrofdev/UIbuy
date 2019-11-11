@@ -1,14 +1,14 @@
 import React from 'react';
 import './detail.css'
 
-const ProductDetails = ({product}) => {
+const ProductDetails = ({product, back}) => {
     return (
         <div className="product-details">
             <figure style={{gridColumn: "1/4"}}>
                 <img style={{
                     width: "100%",
-                    height: "auto",
-                }}  src={require('./'+product.product_url)}/>
+                    height: "30rem",
+                }}  src={product.product_url}/>
             </figure>
             <div 
                 style={{
@@ -21,7 +21,7 @@ const ProductDetails = ({product}) => {
                     <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Product's Name: `}</p><span>{product.product_name}</span>
                 </div>
                 <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
-                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Product's Price: `}</p><span>{'₦'+product.product_price}</span>
+                    <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Product's Price: `}</p><span>{product.product_price}</span>
                 </div>
                 <div style={{display: "flex", justifyContent: "flexStart", alignItems: "center"}}>
                     <p style={{padding: ".5rem .8rem", fontWeight: "700"}}>{`Seller's Name: `}</p><span>{product.seller_name}</span>
@@ -47,7 +47,7 @@ const ProductDetails = ({product}) => {
                     fontSize: "2rem"
                 }}
             >
-                <button>BACK</button>
+                <button className="back" onClick={back}>BACK</button>
                 <button>REQUEST PRODUCT</button>
             </div>
             
