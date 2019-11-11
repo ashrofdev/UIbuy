@@ -10,7 +10,8 @@ import ProductDetails from './Components/ProductDetails/ProductDetails';
 
 class App extends Component {
   state = {
-    route: 'details',
+    route: 'products',
+    buy: true,
     products: [
       {
         product_name: 'test',
@@ -80,7 +81,11 @@ class App extends Component {
   }
 
   viewDetails = (item)=>{
-    this.setState({product: item})
+    document.querySelector(".products"||".likes").classList.remove('route')
+    this.setState({
+      product: item,
+      route: 'details'
+    })
   }
  
 
@@ -112,7 +117,7 @@ class App extends Component {
                 <Sell/>
               : this.state.route === 'likes'?
                 <Likes likes={filteredLikes} />
-              : this.state.route === 'details'?
+              : this.state.buy?
                 <ProductDetails product={this.state.product}/>
               : null
             }

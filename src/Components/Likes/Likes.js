@@ -6,6 +6,7 @@ import Error from '../Error/Error'
 class Likes extends Component {
     render() {
         const { likes, error } = this.props
+        console.log(likes)
         const likesList = likes.map((i,e)=>{
             return <Item img={likes[e].img} name={likes[e].name} seller={likes[e].seller}
              price={likes[e].price}/>
