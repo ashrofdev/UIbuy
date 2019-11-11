@@ -4,7 +4,7 @@ import './detail.css'
 const ProductDetails = ({product}) => {
     return (
         <div className="product-details">
-            <figure style={{gridColumn: "1/4",marginRight: "3rem"}}>
+            <figure style={{gridColumn: "1/4"}}>
                 <img style={{
                     width: "100%",
                     height: "auto",

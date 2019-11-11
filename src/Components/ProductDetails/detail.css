@@ -1,4 +1,15 @@
+@keyframes details {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
 .product-details{
+    animation: details .5s;
     display: grid;
     grid-template-columns: repeat(5, minmax(min-content, 1fr));
     justify-content: "space-between";

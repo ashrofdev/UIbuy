@@ -122,7 +122,7 @@ class App extends Component {
             {
               this.state.route === 'products'?
                 <Products viewDetails={this.viewDetails} items ={filteredProducts} onLike={this.onLike}
-                 error={this.state.error}/>
+                 error={this.state.error} likes={this.state.likes} route={this.state.route}/>
               : this.state.route === 'sell'?
                 <Sell/>
               : this.state.route === 'likes'?
