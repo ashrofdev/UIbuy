@@ -1,7 +1,7 @@
 import React from 'react';
 import './item.css'
 
-const Item = ({name, seller, price, img, onLike, item}) => {
+const Item = ({name, seller, price, img, onLike, item, viewDetails}) => {
     return (
         <div className="item">
             <figure>
@@ -15,7 +15,7 @@ const Item = ({name, seller, price, img, onLike, item}) => {
                 </div>
                 <div className="cta">
                     <button onClick={(e)=>onLike(item, e)} className="like_btn">❤️</button>
-                    <button className="buy_btn">BUY NOW</button>
+                    <button onClick={()=>viewDetails(item)} className="buy_btn">BUY NOW</button>
                 </div>
             </div>
         </div>

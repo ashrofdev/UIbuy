@@ -6,11 +6,22 @@ import Products from './Components/Products/Products'
 import Likes from './Components/Likes/Likes'
 import Sell from './Components/Sell/Sell'
 import { firebaseDB } from './Server';
+import ProductDetails from './Components/ProductDetails/ProductDetails';
 
 class App extends Component {
   state = {
-    route: 'products',
-    products: [],
+    route: 'details',
+    products: [
+      {
+        product_name: 'test',
+        seller_name: 'tester',
+        product_price: '2000',
+        product_negotiability: 'negotiable',
+        seller_phone: '08169094945',
+        product_details: 'This is super story.....'
+      }
+    ],
+    product: {},
     likes: [],
     inputValue: '',
   }
@@ -68,6 +79,9 @@ class App extends Component {
     }
   }
 
+  viewDetails = (item)=>{
+    this.setState({product: item})
+  }
  
 
   render() {
@@ -92,12 +106,14 @@ class App extends Component {
           <section>
             {
               this.state.route === 'products'?
-                <Products items ={filteredProducts} onLike={this.onLike}
+                <Products viewDetails={this.viewDetails} items ={filteredProducts} onLike={this.onLike}
                  error={this.state.error}/>
               : this.state.route === 'sell'?
                 <Sell/>
               : this.state.route === 'likes'?
                 <Likes likes={filteredLikes} />
+              : this.state.route === 'details'?
+                <ProductDetails product={this.state.product}/>
               : null
             }
           </section>

@@ -4,10 +4,9 @@ import Item from './Item';
 
 class Products extends Component {
     render() {
-        const { items, onLike } = this.props
-        console.log(items)
+        const { items, onLike, viewDetails } = this.props
         const item = items.map((i,e)=>{
-            return <Item item={items[e]} itemNo={e} onLike={onLike} img={items[e].product_url} name={items[e].product_name} seller={items[e].seller_name}
+            return <Item viewDetails={viewDetails} item={items[e]} itemNo={e} onLike={onLike} img={items[e].product_url} name={items[e].product_name} seller={items[e].seller_name}
              price={items[e].product_price}/>
         })
         return (
