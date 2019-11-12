@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0dabcb4849f0f667fb9d3fcc1c6091e",
+    "revision": "f149d398ac8e47b94295037f9c51172d",
     "url": "/UIbuy/index.html"
   },
   {
-    "revision": "881cb34f1c331120b50d",
+    "revision": "c925e8838369a705c402",
     "url": "/UIbuy/static/css/main.4247c1ec.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/UIbuy/static/js/2.3c886c52.chunk.js"
   },
   {
-    "revision": "881cb34f1c331120b50d",
-    "url": "/UIbuy/static/js/main.7e5099ea.chunk.js"
+    "revision": "c925e8838369a705c402",
+    "url": "/UIbuy/static/js/main.7e9343ff.chunk.js"
   },
   {
     "revision": "412c8bda13ac9653804a",
