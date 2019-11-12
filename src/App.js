@@ -18,7 +18,6 @@ class App extends Component {
     inputValue: '',
   }
   componentDidMount(){
-
     const items = []
     firebaseDB.ref('products').once('value').then(snapshot=>{
       snapshot.forEach(e => {
@@ -26,6 +25,8 @@ class App extends Component {
       });
       this.setState({products: items})
         console.log(this.state.products)
+    }).catch((err)=>{
+      console.log(err, 111)
     })
     // firebaseDB.ref('products').once('value').then((snapshot)=>{
     //   console.log(snapshot.val())

@@ -2,6 +2,13 @@ import React from 'react';
 import './detail.css'
 
 const ProductDetails = ({product, back}) => {
+    const sendRequest = () => {
+        fetch('https://uibuy-api.herokuapp.com/request-item').then(e=>{
+            console.log(e.json())
+        }).catch(e=>{
+            console.log(e,'an error occured')
+        })
+    }
     return (
         <div className="product-details">
             <figure style={{gridColumn: "1/4"}}>
@@ -48,10 +55,11 @@ const ProductDetails = ({product, back}) => {
                 }}
             >
                 <button className="back" onClick={back}>BACK</button>
-                <button>REQUEST PRODUCT</button>
+                <button onClick={sendRequest}>REQUEST PRODUCT</button>
             </div>
             
         </div>
+        
     );
 };
 
