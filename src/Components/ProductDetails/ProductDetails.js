@@ -1,9 +1,10 @@
 import React from 'react';
+import axios from 'axios'
 import './detail.css'
 
 const ProductDetails = ({product, back}) => {
     const sendRequest = () => {
-        fetch('https://uibuy-api.herokuapp.com/').then(e=>{
+        axios('https://uibuy-api.herokuapp.com/').then(e=>{
             console.log(e.json())
         }).catch(e=>{
             console.log(e,'an error occured')
