@@ -4,7 +4,7 @@ import './detail.css'
 
 const ProductDetails = ({product, back}) => {
     const sendRequest = () => {
-        axios('https://uibuy-api.herokuapp.com/').then(e=>{
+        fetch('https://uibuy-api.herokuapp.com/r').then(e=>{
             console.log(e.json())
         }).catch(e=>{
             console.log(e,'an error occured')
