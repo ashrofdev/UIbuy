@@ -1,14 +1,11 @@
 import React from 'react';
-import axios from 'axios'
 import './detail.css'
 
+
+// 
 const ProductDetails = ({product, back}) => {
     const sendRequest = () => {
-        fetch('https://uibuy-api.herokuapp.com/r').then(e=>{
-            console.log(e.json())
-        }).catch(e=>{
-            console.log(e,'an error occured')
-        })
+        fetch('http://localhost:3001/r').then(console.log).catch(console.log)
     }
     return (
         <div className="product-details">
