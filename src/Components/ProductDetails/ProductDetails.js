@@ -5,7 +5,7 @@ import './detail.css'
 // 
 const ProductDetails = ({product, back}) => {
     const sendRequest = () => {
-        fetch('http://localhost:3001/r').then(console.log).catch(console.log)
+        fetch('https://uibuy-api.herokuapp.com/').then((e)=>console.log(e)).catch((e)=>console.log(e))
     }
     return (
         <div className="product-details">
