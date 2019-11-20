@@ -2,10 +2,18 @@ import React from 'react';
 import './detail.css'
 
 
-// 
+// https://uibuy-api.herokuapp.com/test
 const ProductDetails = ({product, back}) => {
     const sendRequest = () => {
-        fetch('https://uibuy-api.herokuapp.com/').then((e)=>console.log(e)).catch((e)=>console.log(e))
+        fetch('https://uibuy-api.herokuapp.com/send-message', {
+          method: 'post',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            name: "Ashraf"
+          })
+        }).then((e)=>{
+            return e.json()
+        }).then(console.log)
     }
     return (
         <div className="product-details">

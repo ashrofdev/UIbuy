@@ -18,6 +18,7 @@ class App extends Component {
     inputValue: '',
   }
   componentDidMount(){
+    
     const items = []
     firebaseDB.ref('products').once('value').then(snapshot=>{
       snapshot.forEach(e => {
