@@ -5,8 +5,8 @@ import './detail.css'
 // https://uibuy-api.herokuapp.com/test
 const ProductDetails = ({product, back}) => {
     const sendRequest = () => {
-        fetch('https://uibuy-api.herokuapp.com/test').then((e)=>{
-            return e.json()
+        fetch('https://uibuy-api.herokuapp.com/send_mail').then((res)=>{
+            return res.json()
         }).then(console.log)
     }
     return (
